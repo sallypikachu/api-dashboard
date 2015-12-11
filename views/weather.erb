@@ -1,0 +1,9 @@
+<div class="small-6 small-offset-3 columns">
+  <h1> <%= @info["display_location"]["full"] %> </h1>
+  <img src=" <%= @info["icon_url"] %>"
+  <p> <%= @info["weather"] %> </p>
+  <p> Current Temperature: <%= @info["temperature_string"] %> </p>
+  <p> Feels like: <%= @info["feelslike_string"] %> </p>
+  <p> Wind Direction: <%= @info["wind_dir"] %> </p>
+  <p> Wind Speed: <%= @info["wind_mph"] %> </p>
+</div>
