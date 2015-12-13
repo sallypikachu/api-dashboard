@@ -1,0 +1,9 @@
+<div class="small-6 small-offset-3 columns">
+  <h1>Events</h1>
+  <ul>
+    <% @events.each do |event| %>
+      <li><h3> <%= event["title"] %> </h1></li>
+      Venue<%= event["venue"]["name"] %>
+    <% end %>
+  </ul>
+</div>

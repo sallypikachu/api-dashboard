@@ -20,4 +20,21 @@
       Current Temperature: <%= @info["temperature_string"] %>
     </p>
   </div>
+  <div class="callout primary">
+    <h3>Events</h3>
+    <ul>
+      <% @events.each do |event| %>
+      <li><%= event["title"] %> @ <%= event["venue"]["name"] %></li>
+      <% end %>
+  </ul>
+  </div>
+  <div class="callout primary">
+    <h3>Tech News</h3>
+    <ul>
+      <% @tech.each do |t| %>
+        <li> <%= t["title"] %></li>
+        <%= t["abstract"] %>
+        <% end %>
+    </ul>
+  </div>
 </div>

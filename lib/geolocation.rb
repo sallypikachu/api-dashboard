@@ -14,6 +14,10 @@ class Geolocation
     @data["city"]
   end
 
+  def region_code
+    @data["region_code"]
+  end
+
   def state
     @data["region_name"]
   end
